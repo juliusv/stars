@@ -25,3 +25,11 @@ To fetch data, generate a graph PNG, and open the image with `eog`:
 ```bash
 GITHUB_TOKEN=XXXXXXXX make show
 ```
+
+## Generating a GitHub API token
+
+1. Head over to https://github.com/settings/tokens.
+2. Click "Generate new token".
+3. Create a new token with the `public_repo` and/or `repo` scopes.
+4. Copy the resulting token for later use - it will not be visible again!
+5. Set the token when using the `Makefile`. For example, `GITHUB_TOKEN=XXXXXX make plot`.
